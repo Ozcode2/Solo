@@ -1,0 +1,2272 @@
+body, html{
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.container1{
+    height:120vh;
+    width: 100%;
+    background-image: url("images/pro.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    margin-top: 23vh;
+    
+}
+
+.identity{
+    position: absolute;
+    height: 23vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    top: 0vh;
+}
+
+
+#pic{
+    position: absolute;
+    margin-left: 3%;
+    cursor: pointer; 
+    filter: hue-rotate(70deg); 
+    top: 4vh;
+}
+
+#time {
+    margin-left: 43%;
+    font-size: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 1vh;
+}
+
+.social-icons {
+    position: absolute;
+    display: flex;
+    left: 75%;
+    top: 5vh;
+}
+
+
+.social-icons a{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: #666;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.05);
+    /* margin: 0 30px; */
+    border-radius: 50%;  
+    position: relative;
+    overflow: hidden;
+    margin: 1%;
+}
+
+.social-icons a .fab{
+    font-size: 20px;
+    line-height: 50px;
+    position: relative;
+    z-index: 10;
+    transition: color 0.5s;
+    
+}
+
+.social-icons a::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: -90px;
+    left: 0;
+    background: linear-gradient(-45deg, #ed1c94, #ffec17);
+    position: absolute;
+    transition: 0.5s;
+}
+
+.social-icons a:hover::after{
+    top: 0;
+}
+
+.social-icons a:hover .fab{
+    color: #fff;
+}
+
+
+#word{
+    left: 0%;
+    position: absolute;
+    color: lightgreen;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-shadow: 0px 5px 5px purple;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+}
+
+
+#word.visible {
+    opacity: 1;
+    top: 30vh;
+    left: 7%;
+}
+
+#letter{
+    position: absolute;
+    left: 0%;
+    top: 55vh;
+    color: red;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    text-shadow: 0px 5px 5px white;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+}
+
+
+#letter.visible {
+    opacity: 1;
+    top: 45vh;
+    left: 7%;
+}
+#type{
+    position: absolute;
+    left: 0%;
+    top: 95vh;
+    color: greenyellow;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-shadow: 0px 3px 3px firebrick;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+}
+
+#type.visible {
+    opacity: 1;
+    top: 85vh;
+    left: 7%;
+}
+#push{
+    text-align: center;
+    border-color: purple;
+    position: absolute;
+    left: 75%;
+    top: 120vh;
+    background-color: rgb(108, 241, 108);
+    color: black;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    cursor: pointer;
+}
+
+#push:hover{
+    background-color: #ffc000;
+    box-shadow: 0 0 20px #ffc000,
+                0 0 20px #ffc000,
+                0 0 30px #ffc000;
+    cursor: pointer;
+}
+
+.carry{
+    background-color: lightblue;
+    width: 100%;
+    height: 257vh;
+    margin-top:0vh; 
+}
+
+#code{
+    position: absolute;
+    left: 13%;
+    top: 162vh;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+#code::first-letter {
+    margin-left: -15%;
+    color: rgb(22, 232, 18);
+    font-size: 30px;
+}
+.wrapper{
+    position: absolute;
+    width: 28.4%;
+    height: 70vh;
+    background-color: black;
+    top: 200vh;
+    left: 6.5%;
+    box-shadow: 0px 0px 0px rgb(89, 255, 47);
+    transition: 0.7s ease;
+}
+
+.wrapper:hover{
+    box-shadow:  -20px 25px 0px rgb(89, 255, 47);
+    border-radius: 0 0 20%; 
+}
+
+#image{
+    position: absolute;
+    left: 5%;
+    transform: scale(0.7);
+    top: 7vh;
+    filter: hue-rotate(90deg);
+}
+
+#add{
+    position: absolute;
+    left: 10%;
+    top: 18vh;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+#rap{
+    position: absolute;
+    left: 13.2%;
+    top: 28.7vh;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+#rap::first-letter{
+    margin-left: -15%;
+    color: blue;
+    font-size: 20px;
+}
+
+#rate{
+    position: absolute;
+    left: 10.5%;
+    top: 34.5vh;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+#rate::first-letter {
+    margin-left: -15%;
+    color: blue;
+    font-size: 20px;
+}
+
+#fact{
+    position: absolute;
+    left: 11.2%;
+    top: 39.5vh;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+#fact::first-letter {
+    margin-left: -15%;
+    color: blue;
+    font-size: 20px;
+}
+
+
+#win{
+    position: absolute;
+    left: 11%;
+    top: 44.6vh;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+#win::first-letter {
+    margin-left: -15%;
+    color: blue;
+    font-size: 20px;
+}
+
+
+#hard{
+    position: absolute;
+    left: 12%;
+    top: 49.5vh;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+#hard::first-letter {
+    margin-left: -15%;
+    color: blue;
+    font-size: 20px;
+}
+
+#play{
+    position: absolute;
+    left: 76%;
+    top: 55vh;
+    filter: hue-rotate(20deg);
+    transform: scale(2);
+}
+
+#play:hover{
+    transition: 0.7s ease;
+    filter: hue-rotate(360deg);
+    cursor: pointer;
+}
+
+#fan{
+    position: absolute;
+    left: 77.8%;
+    top: 55.8vh;
+    transform: scale(2);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#fan:hover{
+    transition: 0.7s ease;
+    cursor: pointer;
+    color: white;
+}
+
+
+.packer{
+    position: absolute;
+    width: 28.4%;
+    height: 70vh;
+    background-color: black;
+    top: 200vh;
+    left: 37%;
+    box-shadow: 0px 0px 0 rgb(89, 255, 47);
+    transition: 0.7s ease;
+}
+
+.packer:hover{
+    box-shadow: -29px 25px 0 rgb(89, 255, 47);
+    border-radius: 0 0 20%;
+}
+
+
+
+#flash{
+    position: absolute;
+    left: 5%;
+    transform: scale(0.8);
+    top: 7vh;
+    filter: hue-rotate(90deg);
+}
+
+#mark{
+    position: absolute;
+    left: 10%;
+    top: 18vh;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+#dark{
+    position: absolute;
+    left: 12%;
+    top: 28.6vh;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+#dark::first-letter {
+    margin-left: -15%;
+    color: blue;
+    font-size: 20px;
+}
+
+#grab{
+    position: absolute;
+    left: 11.5%;
+    top: 34.6vh;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+#grab::first-letter {
+    margin-left: -15%;
+    color: blue;
+    font-size: 20px;
+}
+
+#cup{
+    position: absolute;
+    left: 12%;
+    top: 39.5vh;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+#cup::first-letter {
+    margin-left: -15%;
+    color: blue;
+    font-size: 20px;
+}
+
+#bag{
+    position: absolute;
+    left: 11.3%;
+    top: 44.5vh;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+#bag::first-letter {
+    margin-left: -15%;
+    color: blue;
+    font-size: 20px;
+}
+
+#wire{
+    position: absolute;
+    left: 12.3%;
+    top: 49vh;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+#wire::first-letter {
+    margin-left: -15%;
+    color: blue;
+    font-size: 20px;
+}
+
+#shape{
+    position: absolute;
+    left: 76%;
+    top: 55vh;
+    filter: hue-rotate(20deg);
+    transform: scale(2);
+}
+
+#shape:hover {
+    transition: 0.7s ease;
+    filter: hue-rotate(360deg);
+    cursor: pointer;
+}
+
+#minus{
+    position: absolute;
+    left: 77.7%;
+    top: 55.8vh;
+    transform: scale(2);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#minus:hover {
+    transition: 0.7s ease;
+    cursor: pointer;
+    color: white;
+}
+
+.gather{
+    position: absolute;
+    width: 28.4%;
+    height: 70vh;
+    background-color: black;
+    top: 200vh;
+    left: 67.6%;
+    box-shadow: 0px 0px 0 rgb(89, 255, 47);
+    transition: 0.7s ease;
+}
+
+.gather:hover {
+    box-shadow: -29px 25px 0 rgb(89, 255, 47);
+    border-radius: 0 0 20%;
+}
+
+#sync{
+    position: absolute;
+    left: 5%;
+    transform: scale(0.8);
+    top: 7vh;
+    filter: hue-rotate(90deg);
+}
+
+#head{
+    position: absolute;
+    left: 10%;
+    top: 18vh;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+#five{
+    position: absolute;
+    left: 11.3%;
+    top: 28.5vh;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+#five::first-letter {
+    margin-left: -12%;
+    color: blue;
+    font-size: 20px;
+}
+
+#royce{
+    position: absolute;
+    left: 9.5%;
+    top: 34.5vh;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+#royce::first-letter {
+    margin-left: -10%;
+    color: blue;
+    font-size: 20px;
+}
+
+#bull{
+    position: absolute;
+    left: 16%;
+    top: 39.5vh;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+#bull::first-letter {
+    margin-left: -13%;
+    color: blue;
+    font-size: 20px;
+}
+
+#madrid{
+    position: absolute;
+    left: 12%;
+    top: 44.5vh;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+#madrid::first-letter {
+    margin-left: -11%;
+    color: blue;
+    font-size: 20px;
+}
+
+#city{
+    position: absolute;
+    left: 13.3%;
+    top: 49.5vh;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+#city::first-letter {
+    margin-left: -12%;
+    color: blue;
+    font-size: 20px;
+}
+#remote{
+    position: absolute;
+    left: 76%;
+    top: 55vh;
+    filter: hue-rotate(20deg);
+    transform: scale(2);
+}
+
+#remote:hover {
+    transition: 0.7s ease;
+    filter: hue-rotate(360deg);
+    cursor: pointer;
+}
+
+#control{
+    position: absolute;
+    left: 77.8%;
+    top: 55.8vh;
+    transform: scale(2);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#control:hover{
+    transition: 0.7s ease;
+    cursor: pointer;
+    color: white;
+}
+
+
+#ten{
+    position: absolute;
+    top: 280vh;
+    left: 5%;
+    transform: scale(0.7);
+}
+
+#font{
+    position: absolute;
+    left: 51%;
+    top: 296vh;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+
+#font:first-letter{
+    font-size: 35px;
+    color: blue;
+    margin-left: -11%;
+}
+
+#make{
+    position: absolute;
+    left: 51%;
+    top: 320vh;
+    font-size: 14px;
+    font-weight: light;
+    color: black;
+    line-height: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#arrow{
+    position: absolute;
+    left: 51%;
+    top: 350vh;
+    font-size: 15px;
+    font-weight: bold;
+    color: blue;
+    font-family: fantasy;
+}
+
+#bow{
+    position: absolute;
+    left: 53%;
+    top: 350vh;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#flow{
+    position: absolute;
+    left: 51%;
+    top: 356vh;
+    font-size: 14px;
+    font-weight: light;
+    color: black;
+    line-height: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#chart{
+    position: absolute;
+    left: 77%;
+    top: 350vh;
+    font-size: 15px;
+    font-weight: bold;
+    color: blue;
+    font-family: fantasy;
+}
+
+#pie{
+    position: absolute;
+    left: 79%;
+    top: 350vh;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#cake{
+    position: absolute;
+    left: 77%;
+    top: 356vh;
+    font-size: 14px;
+    font-weight: light;
+    color: black;
+    line-height: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.wrap{
+    height: 160vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.944);
+    position: relative;
+    top: 257vh;  
+}
+
+#open{
+    position: absolute;
+    left: 47%;
+    top: 7vh;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: blue;
+}
+
+#dove{
+    position: absolute;
+    left: 47%;
+    top: 7vh;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: blue;
+    visibility: hidden;
+}
+
+#close{
+    position: absolute;
+    left: 33%;
+    top: 14vh;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+#ply{
+    position: absolute;
+    left: 13%;
+    top: 60vh;
+    filter: hue-rotate(50deg);
+    transform: scale(0.8);
+}
+
+#sub{
+    position: absolute;
+    left: 13%;
+    top: 85vh;
+    font-size: 21px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+#sum{
+    position: absolute;
+    left: 13%;
+    top: 94vh;
+    font-size: 14px;
+    font-weight: light;
+    color: white;
+    line-height: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#can{
+    position: absolute;
+    left: 38%;
+    top: 59vh;
+    filter: hue-rotate(50deg);
+    transform: scale(0.8);
+}
+
+#sun{
+    position: absolute;
+    left: 39%;
+    top: 85vh;
+    font-size: 21px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+#moon{
+    position: absolute;
+    left: 39%;
+    top: 94vh;
+    font-size: 14px;
+    font-weight: light;
+    color: white;
+    line-height: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#cut{
+    position: absolute;
+    left: 65%;
+    top: 59vh;
+    filter: hue-rotate(50deg);
+    transform: scale(0.8);
+}
+
+#sat{
+    position: absolute;
+    left: 65%;
+    top: 85vh;
+    font-size: 21px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+#sit{
+    position: absolute;
+    left: 65%;
+    top: 94vh;
+    font-size: 14px;
+    font-weight: light;
+    color: white;
+    line-height: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#song{
+    position: absolute;
+    left: 28%;
+    top: 73vh;
+    filter: hue-rotate(100deg);
+    transform: scale(0.9);
+}
+
+#easy{
+    position: absolute;
+    left: 55%;
+    top: 73vh;
+    filter: hue-rotate(100deg);
+    transform: scale(0.9);
+}
+
+#mail{
+    position: absolute;
+    left: 12%;
+    top: 110vh;
+    transform: scale(0.8);
+    cursor: pointer;
+}
+
+#pay{
+    position: absolute;
+    left: 38%;
+    top: 110vh;
+    transform: scale(0.8);
+    cursor: pointer;
+}
+
+#slip{
+    position: absolute;
+    left: 64%;
+    top: 110vh;
+    transform: scale(0.8);
+    cursor: pointer;
+}
+
+.contain{
+    position: relative;
+    height: 56vh;
+    width: 100%;
+    background-color: darkblue;
+    top: 160vh;
+}
+
+#mend{
+    position: absolute;
+    color: white;
+    left: 14%;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    top: 5vh;
+}
+
+#lend{
+    position: absolute;
+    color: white;
+    left: 14%;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    top: 15vh;
+}
+
+#pill{
+    position: absolute;
+    color: white;
+    left: 14%;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 20vh;
+    line-height: 1.4;
+}
+
+#rug{
+    position: absolute;
+    color: yellow;
+    left: 55%;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    top: 10vh;
+}
+
+#fund{
+    text-align: center;
+    border-color: purple;
+    position: absolute;
+    left: 17%;
+    top: 43vh;
+    background-color: rgb(108, 241, 108);
+    color: black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+}
+
+#fund:hover {
+    background-color: #ffc000;
+    box-shadow: 0 0 20px #ffc000,
+                0 0 20px #ffc000,
+                0 0 30px #ffc000;
+    cursor: pointer;
+}
+
+.basket{
+    height: 22vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.944);
+    position: relative;
+    top: 160vh;
+}
+
+#end{
+    position: absolute;
+    margin-left: 7%;
+    padding-top: 3vh;
+    cursor: pointer;
+    filter: hue-rotate(70deg);
+}
+
+#mess{
+    left: 45%;
+    font-size: 20px;
+    position: absolute;
+    top: 4vh;
+}
+
+#grow{
+    left: 48%;
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 6vh;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#grammy{
+    left: 84%;
+    position: absolute;
+    top: 9vh;
+    transform: scale(2);
+    color: blue;
+    cursor: pointer;
+}
+
+.brand{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.882);
+    top: 160vh;
+    height: 10vh;
+    width: 100%;
+}
+
+#tune{
+    position: absolute;
+    left: 40.4%;
+    color: white;
+    top: 3vh;
+    font-size: 12px;
+}
+
+#tune i:first-child {
+    color: blue;
+}
+#myBtn {
+    position: fixed;
+    bottom: 28vh;
+    right: 3%;
+    z-index: 55;
+    border: none;
+    outline: none;
+    background-color: blue;
+    color: #666;
+    cursor: pointer;
+    padding: 7px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+#myBtn:hover {
+    background-color: red;
+    color: white;
+}
+
+#rand{
+    left: 87%;
+    position: absolute;
+    top: 8vh;
+    color: #666;
+    font-size: 13px;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+@media (min-width: 280px) and (max-width: 450px){
+    #word{
+        margin-left: -5%;
+    }
+    #letter{
+        margin-left: -5%;
+        margin-top: 12vh;
+    }
+    .social-icons a::after {
+        visibility: hidden;
+    }
+    #type{
+        margin-left: -5%;
+        margin-top: 9vh;
+    }
+    #push{
+        margin-left: -50%;
+        margin-top: 10vh;
+    }
+    .social-icons{
+        margin-left: -55%;
+        margin-top: 10vh;
+    }
+    #time{
+        margin-left: 25%;
+        font-size: 8px;
+    }
+    #code{
+        font-size: 20px;
+        margin-left: 13%;
+        margin-top: 5.5vh;
+    }
+    #code::first-letter{
+        margin-left: -17%;
+    }
+    .brand{
+        margin-top: 0vh;
+    }
+    .basket{
+        margin-top: 0vh;
+        height: 45vh;
+    }
+    .contain{
+        margin-top: 40vh;
+        height: 80vh;
+    }
+    .wrap{
+        top: 460vh;
+        height: 200vh;
+    }
+    .carry{
+        height: 460vh;
+    }
+    #ten{
+        margin-top: 130vh;
+        transform: scale(0.4);
+        margin-left: -35%;
+    }
+    
+    #font{
+        margin-top: 179vh;
+        font-size: 20px;
+        margin-left: -30%;
+    }
+
+    #make{
+        margin-top: 500vh;
+    }
+    #arrow{
+        margin-top: 180vh;
+        margin-left: -45%;
+    }
+    #bow{
+        margin-top: 180vh;
+        margin-left: -40%;
+    }
+    #flow{
+        margin-top: 180vh;
+        margin-left: -47%;
+    }
+    #chart{
+        margin-top: 220vh;
+        margin-left: -70%;
+    }
+    #pie{
+        margin-top: 220vh;
+        margin-left: -65%;
+    }
+    #cake{
+        margin-top: 220vh;
+        margin-left: -73%;
+    }
+    .gather{
+        margin-top: 150vh;
+        margin-left: -63%;
+        width: 90%;
+    }
+    .gather:hover{
+        box-shadow: none;
+        border-radius: none;
+    }
+    .packer{
+        margin-top: 75vh;
+        margin-left: -33%;
+        width: 90%; 
+    }
+    .packer:hover{
+        box-shadow: none;
+        border-radius: none;
+    }
+    .wrapper{
+        margin-left: -3%;
+        width: 90%;
+    }
+    .wrapper:hover{
+        box-shadow: none;
+        border-radius: none;
+    }
+    #fan{
+        visibility: hidden;
+    }
+    #minus{
+        visibility: hidden;
+    }
+    #control{
+        visibility: hidden;
+    }
+    #make{
+        margin-top: 170vh;
+        margin-left: -46%;
+    }
+    #open{
+        margin-left: -3%;
+    }
+    #close{
+        font-size: 20px;
+        margin-left: -20%;
+    }
+    #song{
+        visibility: hidden;
+    }
+    #easy{
+        visibility: hidden;
+    }
+    #cut{
+        margin-top: 85vh;
+        margin-left: -40%;
+    }
+    #can{
+        margin-top: 35vh;
+        margin-left: -15%;
+    }
+    #sun{
+        margin-top: 35vh;
+        margin-left: -17%;
+    }
+    #moon{
+        margin-top: 32vh;
+        margin-left: -17%;
+    }
+    #sat{
+        margin-top: 84vh;
+        margin-left: -40%;
+    }
+    #sit{
+        margin-top: 81vh;
+        margin-left: -40%;
+    }
+    #pay{
+        margin-top: 29vh;
+        margin-left: -20%;
+    }
+    #slip{
+        margin-top: 79vh;
+        margin-left: -43%;
+    }
+    #ply{
+        margin-top: -15vh;
+        margin-left: 8%;
+    }
+    #sub{
+        margin-top: -15vh;
+        margin-left: 8%;
+    }
+    #sum{
+        margin-top: -18vh;
+        margin-left: 8%;
+    }
+    #mail{
+        margin-top: -21vh;
+        margin-left: 5%;
+    }
+    #fund{
+        margin-top: 20vh;
+    }
+    #rug{
+        margin-top: 42vh;
+        margin-left: -40%;
+        font-size: 40px;  
+    }
+    #pill{
+        margin-top: 8vh;
+    }
+    #lend{
+        margin-top: 6vh;
+    }
+    #mess{
+        margin-top: 14vh;
+        margin-left: -37%;
+    }
+    #grow{
+        margin-top: 13vh;
+        margin-left: -31%;
+    }
+    #grammy{
+        margin-top: 22vh;
+        margin-left: -73%;
+    }
+    #rand{
+        margin-top: 24vh;
+        margin-left: -67%;
+    }
+    #tune{
+        margin-left: -30%;
+    }
+    #real{
+        margin-top: 2.1vh;
+    }
+    #font:first-letter{
+        margin-left: -20%;
+        letter-spacing: 3px;
+    }
+    
+}
+@media (min-width: 375px) and (max-width: 375.9px) {
+    #font:first-letter {
+        margin-left: -15%;
+        letter-spacing: 3px;
+        }
+    #bull{
+        margin-left: 0.7%;
+    }
+    #city{
+        margin-left: 0.4%;
+    }
+    }
+@media (min-width: 360px) and (max-width: 360.9px) {
+    #bull{
+        margin-left: 0.7%;
+    }
+}
+@media (min-width: 768px) and (max-width: 768.9px) {
+    #bull{
+        margin-left: -1%;
+    }
+}
+@media (min-width: 540px) and (max-width: 540.9px) {
+    #bull{
+        margin-left: 0.6%;
+    }
+}
+@media (min-width: 280px) and (max-width: 280.9px) {
+    #bull{
+        margin-left: 1.2%;
+    }
+    #rap{
+        margin-left: 1.5%;
+    }
+    #wire{
+        margin-left: 0.5%;
+    }
+    #hard{
+        margin-left: 1%;
+    }
+    #five{
+        margin-left: 1%;
+    }
+    #city{
+        margin-left: 0.7%;
+    }
+}
+@media (min-width: 451px) and (max-width: 650px){
+    #word {
+        margin-left: -5%;
+    }
+    .social-icons a::after {
+        visibility: hidden;
+    }
+    #font::first-letter {
+        margin-left: -14%;
+    }
+    #letter {
+        margin-left: -5%;
+    }
+
+    #type {
+        margin-left: -5%;
+    }
+
+    #push {
+        margin-left: -50%;
+        margin-top: 10vh;
+    }
+
+    .social-icons {
+        margin-left: -25%;
+        margin-top: 10vh;
+    }
+
+    #time {
+        margin-left: 40%;
+        font-size: 8px;
+    }
+
+    #pop {
+        margin-left: -5%
+    }
+
+    #code {
+        font-size: 20px;
+        margin-left: 5%;
+        margin-top: 5.5vh;
+    }
+
+    .brand {
+        margin-top: 0vh;
+    }
+
+    .basket {
+        margin-top: 0vh;
+        height: 45vh;
+    }
+
+    .contain {
+        margin-top: 40vh;
+        height: 80vh;
+    }
+
+    .wrap {
+        top: 460vh;
+        height: 200vh;
+    }
+
+    .carry {
+        height: 460vh;
+    }
+
+    #ten {
+        margin-top: 130vh;
+        transform: scale(0.4);
+        margin-left: -15%;
+    }
+
+    #topic {
+        margin-top: 180vh;
+        margin-left: -40%;
+    }
+
+    #font {
+        margin-top: 179vh;
+        font-size: 20px;
+        margin-left: -35%;
+    }
+
+    #make {
+        margin-top: 500vh;
+    }
+
+    #arrow {
+        margin-top: 180vh;
+        margin-left: -45%;
+    }
+
+    #bow {
+        margin-top: 180vh;
+        margin-left: -42%;
+    }
+
+    #flow {
+        margin-top: 180vh;
+        margin-left: -47%;
+    }
+
+    #chart {
+        margin-top: 220vh;
+        margin-left: -70%;
+    }
+
+    #pie {
+        margin-top: 220vh;
+        margin-left: -67%;
+    }
+
+    #cake {
+        margin-top: 220vh;
+        margin-left: -73%;
+    }
+
+    .gather {
+        margin-top: 150vh;
+        margin-left: -63%;
+        width: 60%;
+    }
+
+    .gather:hover {
+        box-shadow: none;
+        border-radius: none;
+    }
+
+    .packer {
+        margin-top: 75vh;
+        margin-left: -33%;
+        width: 60%;
+    }
+
+    .packer:hover {
+        box-shadow: none;
+        border-radius: none;
+    }
+
+    .wrapper {
+        margin-left: -3%;
+        width: 60%;
+    }
+
+    .wrapper:hover {
+        box-shadow: none;
+        border-radius: none;
+    }
+
+    #fan {
+        visibility: hidden;
+    }
+
+    #minus {
+        visibility: hidden;
+    }
+
+    #control {
+        visibility: hidden;
+    }
+
+    #make {
+        margin-top: 170vh;
+        margin-left: -46%;
+    }
+
+    #open {
+        margin-left: -3%;
+        visibility: hidden;
+    }
+
+    #dove{
+        visibility: visible;
+        margin-left: -42%;
+        margin-top: 9vh;
+    }
+
+    #close {
+        font-size: 20px;
+        margin-left: -20%;
+    }
+
+    #song {
+        visibility: hidden;
+    }
+
+    #easy {
+        visibility: hidden;
+    }
+
+    #cut {
+        margin-top: 85vh;
+        margin-left: -40%;
+    }
+
+    #can {
+        margin-top: 35vh;
+        margin-left: -15%;
+    }
+
+    #sun {
+        margin-top: 35vh;
+        margin-left: -17%;
+    }
+
+    #moon {
+        margin-top: 32vh;
+        margin-left: -17%;
+    }
+
+    #sat {
+        margin-top: 84vh;
+        margin-left: -40%;
+    }
+
+    #sit {
+        margin-top: 81vh;
+        margin-left: -40%;
+    }
+
+    #pay {
+        margin-top: 29vh;
+        margin-left: -20%;
+    }
+
+    #slip {
+        margin-top: 78vh;
+        margin-left: -43%;
+    }
+
+    #ply {
+        margin-top: -15vh;
+        margin-left: 8%;
+    }
+
+    #sub {
+        margin-top: -15vh;
+        margin-left: 8%;
+    }
+
+    #sum {
+        margin-top: -18vh;
+        margin-left: 8%;
+    }
+
+    #mail {
+        margin-top: -21vh;
+        margin-left: 5%;
+    }
+
+    #fund {
+        margin-top: 20vh;
+    }
+
+    #rug {
+        margin-top: 30vh;
+        margin-left: -40%;
+        font-size: 45px;
+    }
+
+    #pill {
+        margin-top: 3vh;
+    }
+
+    #lend {
+        margin-top: 1vh;
+    }
+
+    #mess {
+        margin-top: 14vh;
+        margin-left: -37%;
+    }
+
+    #grow {
+        margin-top: 13vh;
+        margin-left: -31%;
+    }
+
+    #grammy {
+        margin-top: 22vh;
+        margin-left: -73%;
+    }
+
+    #rand {
+        margin-top: 24vh;
+        margin-left: -67%;
+    }
+
+    #tune {
+        margin-left: -20%;
+    }
+
+    #real {
+        margin-top: 2.1vh;
+    }
+}
+
+@media (min-width: 551px) and (max-width: 800px){
+    #word {
+        margin-left: -5%;
+    }
+    .social-icons a::after {
+        visibility: hidden;
+    }
+    #font::first-letter {
+        margin-left: -14%;
+    }
+
+    #letter {
+        margin-left: -5%;
+    }
+
+    #type {
+        margin-left: -5%;
+    }
+
+    #push {
+        margin-left: -50%;
+        margin-top: 10vh;
+    }
+
+    .social-icons {
+        margin-left: -10%;
+        margin-top: 2vh;
+    }
+
+    #time {
+        margin-left: 40%;
+        font-size: 8px;
+    }
+
+    #pop {
+        margin-left: -5%
+    }
+
+    #code {
+        font-size: 20px;
+        margin-left: 5%;
+        margin-top: 5.5vh;
+    }
+
+    .brand {
+        margin-top: 0vh;
+    }
+
+    .basket {
+        margin-top: 0vh;
+        height: 45vh;
+    }
+
+    .contain {
+        margin-top: 40vh;
+        height: 80vh;
+    }
+
+    .wrap {
+        top: 460vh;
+        height: 200vh;
+    }
+
+    .carry {
+        height: 460vh;
+    }
+
+    #ten {
+        margin-top: 130vh;
+        transform: scale(0.4);
+        margin-left: -15%;
+    }
+
+    #topic {
+        margin-top: 180vh;
+        margin-left: -40%;
+    }
+
+    #font {
+        margin-top: 179vh;
+        font-size: 20px;
+        margin-left: -35%;
+    }
+
+    #make {
+        margin-top: 500vh;
+    }
+
+    #arrow {
+        margin-top: 180vh;
+        margin-left: -45%;
+    }
+
+    #bow {
+        margin-top: 180vh;
+        margin-left: -42%;
+    }
+
+    #flow {
+        margin-top: 180vh;
+        margin-left: -47%;
+    }
+
+    #chart {
+        margin-top: 220vh;
+        margin-left: -70%;
+    }
+
+    #pie {
+        margin-top: 220vh;
+        margin-left: -67%;
+    }
+
+    #cake {
+        margin-top: 220vh;
+        margin-left: -73%;
+    }
+
+    .gather {
+        margin-top: 150vh;
+        margin-left: -63%;
+        width: 60%;
+    }
+
+    .gather:hover {
+        box-shadow: none;
+        border-radius: none;
+    }
+
+    .packer {
+        margin-top: 75vh;
+        margin-left: -33%;
+        width: 60%;
+    }
+
+    .packer:hover {
+        box-shadow: none;
+        border-radius: none;
+    }
+
+    .wrapper {
+        margin-left: -3%;
+        width: 60%;
+    }
+
+    .wrapper:hover {
+        box-shadow: none;
+        border-radius: none;
+    }
+
+    #fan {
+        visibility: hidden;
+    }
+
+    #minus {
+        visibility: hidden;
+    }
+
+    #control {
+        visibility: hidden;
+    }
+
+    #make {
+        margin-top: 170vh;
+        margin-left: -46%;
+    }
+
+    #open {
+        margin-left: -3%;
+        visibility: hidden;
+    }
+
+    #dove {
+        visibility: visible;
+        margin-left: -42%;
+        margin-top: 9vh;
+    }
+
+    #close {
+        font-size: 20px;
+        margin-left: -20%;
+    }
+
+    #song {
+        visibility: hidden;
+    }
+
+    #easy {
+        visibility: hidden;
+    }
+
+    #cut {
+        margin-top: 85vh;
+        margin-left: -40%;
+    }
+
+    #can {
+        margin-top: 35vh;
+        margin-left: -15%;
+    }
+
+    #sun {
+        margin-top: 35vh;
+        margin-left: -17%;
+    }
+
+    #moon {
+        margin-top: 32vh;
+        margin-left: -17%;
+    }
+
+    #sat {
+        margin-top: 84vh;
+        margin-left: -40%;
+    }
+
+    #sit {
+        margin-top: 81vh;
+        margin-left: -40%;
+    }
+
+    #pay {
+        margin-top: 29vh;
+        margin-left: -20%;
+    }
+
+    #slip {
+        margin-top: 78vh;
+        margin-left: -43%;
+    }
+
+    #ply {
+        margin-top: -15vh;
+        margin-left: 8%;
+    }
+
+    #sub {
+        margin-top: -15vh;
+        margin-left: 8%;
+    }
+
+    #sum {
+        margin-top: -18vh;
+        margin-left: 8%;
+    }
+
+    #mail {
+        margin-top: -21vh;
+        margin-left: 5%;
+    }
+
+    #fund {
+        margin-top: 20vh;
+    }
+
+    #rug {
+        margin-top: 30vh;
+        margin-left: -40%;
+        font-size: 45px;
+    }
+
+    #pill {
+        margin-top: 3vh;
+    }
+
+    #lend {
+        margin-top: 1vh;
+    }
+
+    #mess {
+        margin-top: 14vh;
+        margin-left: -37%;
+    }
+
+    #grow {
+        margin-top: 13vh;
+        margin-left: -35%;
+    }
+
+    #grammy {
+        margin-top: 22vh;
+        margin-left: -73%;
+    }
+
+    #rand {
+        margin-top: 24vh;
+        margin-left: -72%;
+    }
+
+    #tune {
+        margin-left: -10%;
+    }
+
+    #real {
+        margin-top: 2.1vh;
+    }
+    #mail{
+        margin-left: 7%;
+    }
+    #pay{
+        margin-left: -18%;
+    }
+    #slip{
+        margin-left: -40%;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 992px) {
+    #word {
+        margin-left: -5%;
+    }
+    .social-icons a::after {
+        visibility: hidden;
+    }
+    #font::first-letter {
+        margin-left: -14%;
+    }
+
+    #letter {
+        margin-left: -5%;
+    }
+
+    #type {
+        margin-left: -5%;
+    }
+
+    #push {
+        margin-left: -20%;
+        margin-top: 10vh;
+    }
+
+    .social-icons {
+        margin-left: -10%;
+        margin-top: 2vh;
+    }
+
+    #time {
+        margin-left: 40%;
+        font-size: 8px;
+    }
+
+    #pop {
+        margin-left: -5%
+    }
+
+    #code {
+        font-size: 20px;
+        margin-left: 5%;
+        margin-top: 5.5vh;
+    }
+
+    .brand {
+        margin-top: 0vh;
+    }
+
+    .basket {
+        margin-top: 0vh;
+        height: 45vh;
+    }
+
+    .contain {
+        margin-top: 40vh;
+        height: 80vh;
+    }
+
+    .wrap {
+        top: 460vh;
+        height: 200vh;
+    }
+
+    .carry {
+        height: 460vh;
+    }
+
+    #ten {
+        margin-top: 100vh;
+        transform: scale(1);
+        margin-left: 10%;
+    }
+
+    #topic {
+        margin-top: 180vh;
+        margin-left: -40%;
+    }
+
+    #font {
+        margin-top: 179vh;
+        font-size: 20px;
+        margin-left: -35%;
+    }
+
+    #make {
+        margin-top: 500vh;
+    }
+
+    #arrow {
+        margin-top: 180vh;
+        margin-left: -45%;
+    }
+
+    #bow {
+        margin-top: 180vh;
+        margin-left: -42%;
+    }
+
+    #flow {
+        margin-top: 180vh;
+        margin-left: -47%;
+    }
+
+    #chart {
+        margin-top: 220vh;
+        margin-left: -70%;
+    }
+
+    #pie {
+        margin-top: 220vh;
+        margin-left: -67%;
+    }
+
+    #cake {
+        margin-top: 220vh;
+        margin-left: -73%;
+    }
+
+    .gather {
+        margin-top: 80vh;
+        margin-left: -43%;
+        width: 40%;
+    }
+
+    .gather:hover {
+        box-shadow: none;
+        border-radius: none;
+    }
+
+    .packer {
+        margin-top: 0vh;
+        margin-left: 13%;
+        width: 40%;
+    }
+
+    .packer:hover {
+        box-shadow: none;
+        border-radius: none;
+    }
+
+    .wrapper {
+        margin-left: -3%;
+        width: 40%;
+    }
+
+    .wrapper:hover {
+        box-shadow: none;
+        border-radius: none;
+    }
+
+    #fan {
+        visibility: hidden;
+    }
+
+    #minus {
+        visibility: hidden;
+    }
+
+    #control {
+        visibility: hidden;
+    }
+
+    #make {
+        margin-top: 170vh;
+        margin-left: -46%;
+    }
+
+    #open {
+        margin-left: 1%;
+        visibility: hidden;
+    }
+
+    #dove {
+        visibility: visible;
+        margin-left: -42%;
+        margin-top: 9vh;
+    }
+
+    #close {
+        font-size: 20px;
+        margin-left: -20%;
+    }
+
+    #song {
+        visibility: hidden;
+    }
+
+    #easy {
+        visibility: hidden;
+    }
+
+    #cut {
+        margin-top: 85vh;
+        margin-left: -40%;
+    }
+
+    #can {
+        margin-top: 35vh;
+        margin-left: -15%;
+    }
+
+    #sun {
+        margin-top: 35vh;
+        margin-left: -17%;
+    }
+
+    #moon {
+        margin-top: 32vh;
+        margin-left: -17%;
+    }
+
+    #sat {
+        margin-top: 84vh;
+        margin-left: -40%;
+    }
+
+    #sit {
+        margin-top: 81vh;
+        margin-left: -40%;
+    }
+
+    #pay {
+        margin-top: 29vh;
+        margin-left: -20%;
+    }
+
+    #slip {
+        margin-top: 78vh;
+        margin-left: -43%;
+    }
+
+    #ply {
+        margin-top: -15vh;
+        margin-left: 8%;
+    }
+
+    #sub {
+        margin-top: -15vh;
+        margin-left: 8%;
+    }
+
+    #sum {
+        margin-top: -18vh;
+        margin-left: 8%;
+    }
+
+    #mail {
+        margin-top: -21vh;
+        margin-left: 5%;
+    }
+
+    #fund {
+        margin-top: 20vh;
+    }
+
+    #rug {
+        margin-top: 30vh;
+        margin-left: -40%;
+        font-size: 45px;
+    }
+
+    #pill {
+        margin-top: 3vh;
+    }
+
+    #lend {
+        margin-top: 1vh;
+    }
+
+    #mess {
+        margin-top: 14vh;
+        margin-left: -37%;
+    }
+
+    #grow {
+        margin-top: 13vh;
+        margin-left: -35%;
+    }
+
+    #grammy {
+        margin-top: 22vh;
+        margin-left: -73%;
+    }
+
+    #rand {
+        margin-top: 24vh;
+        margin-left: -72%;
+    }
+
+    #tune {
+        margin-left: -10%;
+    }
+
+    #real {
+        margin-top: 2.1vh;
+    }
+
+    #mail {
+        margin-left: 7%;
+    }
+
+    #pay {
+        margin-left: -18%;
+    }
+
+    #slip {
+        margin-left: -40%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1300px) {
+    #fan{
+        visibility: hidden;
+    }
+
+    #minus{
+        visibility: hidden;
+    }
+
+    #control{
+        visibility: hidden;
+    }
+    #bull{
+        margin-left: 1.5%;
+    }
+
+    #city{
+        margin-left: 0.8%;
+    }
+}
+
